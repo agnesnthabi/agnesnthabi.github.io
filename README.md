@@ -1,6 +1,6 @@
 # agnesnthabi.github.io
 
-# Nthabiseng Mathabatha | Data Science Learner & Aspiring Data Analyst
+# Nthabiseng Mathabatha | Data Analyst & Aspiring Data Scientist
 
 Welcome to my personal portfolio website! This site showcases my journey in data science and data analysis, including hands-on projects, skills, and learning experiences.
 
