@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site showcases my journey in data science and data analysis, including hands-on projects, skills, and learning experiences.
 
-🌐 **Live Portfolio:** [https://yourusername.github.io](https://yourusername.github.io)
+🌐 **Live Portfolio:** [https://agnesnthabi.github.io](https://agnesnthabi.github.io)
 
 ---
 
@@ -42,9 +42,9 @@ Here are some of the projects I’ve worked on:
 
 ## 📫 Contact Me
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/YOURUSERNAME/)
-- 📧 youremail@example.com
-- 🐙 [GitHub](https://github.com/YOURUSERNAME)
+- 💼 [LinkedIn](https://www.linkedin.com/in/nthabiseng-mathabatha-434319237//)
+- 📧 agnesnthabisengm@gmail.com
+- 🐙 [GitHub](https://github.com/agnesnthabi)
 
 ---
 
