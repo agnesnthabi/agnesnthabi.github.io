@@ -1,78 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nthabiseng Mathabatha - Data Portfolio</title>
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #0f172a;
       color: #f1f5f9;
-      font-family: Arial, sans-serif;
-      padding: 2rem;
+      line-height: 1.6;
     }
-    h1, h2 {
+
+    header {
+      background-color: #1e293b;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
       color: #38bdf8;
     }
-    a {
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      color: #38bdf8;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      background-color: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .project h3 {
+      margin-top: 0;
       color: #93c5fd;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #1e293b;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Nthabiseng Mathabatha</h1>
-  <p>Data Analyst | Aspiring Data Scientist</p>
+  <header>
+    <h1>Nthabiseng Mathabatha</h1>
+    <p>Data Analyst | Aspiring Data Scientist</p>
+  </header>
 
-  <h2>About Me</h2>
-  <p>I’m currently completing a 12-month Data Science Learnership — 6 months of learning and 6 months of workplace experience under the Finance team of an insurance company.</p>
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m currently completing a 12-month Data Science Learnership — 6 months of learning and 6 months of workplace experience under the Finance team of an insurance company.
+      </p>
+    </section>
 
-<h2>Projects</h2>
+    <section>
+      <h2>Projects</h2>
 
-<div>
-  <h3>💧 WaTime</h3>
-  <p>We built a smart irrigation system to efficiently manage water usage for grass and plants.</p>
-  <p><strong>Tools:</strong> Python, IoT, Machine Learning</p>
-  <p><a href="https://github.com/WaTime-Project" target="_blank" rel="noopener noreferrer">View GitHub Repository</a></p>
-</div>
+      <div class="project">
+        <h3>💧 WaTime</h3>
+        <p>We built a smart irrigation system to efficiently manage water usage for grass and plants.</p>
+        <p><strong>Tools:</strong> Python, IoT, Machine Learning</p>
+        <p><a href="https://github.com/WaTime-Project" target="_blank">View GitHub Repository</a></p>
+      </div>
 
-<div>
-  <h3>🚗 Claim Vision</h3>
-  <p>
-    ClaimVision is a data-driven solution designed to help AutoInland, a West African auto insurance provider, predict which customers are likely to submit a vehicle insurance claim within the next three months. This predictive model enables improved financial planning, resource allocation, and proactive customer service.
-  </p>
-  <p>
-    The project involved collecting and preprocessing historical policy and claim data, feature engineering, and evaluating classification algorithms including Logistic Regression, Random Forest, and Gradient Boosting. The final model was chosen based on performance, explainability, and deployment readiness.
-  </p>
-  <p><strong>Evaluation Metric:</strong> F1 Score to balance precision and recall.</p>
-  <p><strong>Technologies Used:</strong> Python, Jupyter Notebooks, Streamlit, Power BI</p>
-  <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Joblib, Altair, Base64</p>
-  <p><a href="https://github.com/The-DigitalAcademy/claim_vision" target="_blank" rel="noopener noreferrer">View GitHub Repository</a></p>
-</div>
+      <div class="project">
+        <h3>🚗 Claim Vision</h3>
+        <p>
+          ClaimVision is a data-driven solution designed to help AutoInland, a West African auto insurance provider, predict which customers are likely to submit a vehicle insurance claim within the next three months. This predictive model enables improved financial planning, resource allocation, and proactive customer service.
+        </p>
+        <p>
+          The project involved collecting and preprocessing historical policy and claim data, feature engineering, and evaluating classification algorithms including Logistic Regression, Random Forest, and Gradient Boosting. The final model was chosen based on performance, explainability, and deployment readiness.
+        </p>
+        <p><strong>Evaluation Metric:</strong> F1 Score to balance precision and recall.</p>
+        <p><strong>Technologies Used:</strong> Python, Jupyter Notebooks, Streamlit, Power BI</p>
+        <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Joblib, Altair, Base64</p>
+        <p><a href="https://github.com/The-DigitalAcademy/claim_vision" target="_blank">View GitHub Repository</a></p>
+      </div>
 
-<div>
-  <h3>🏥 Healthcare Claims Analysis (Power BI)</h3>
-  <p>
-    This project examines healthcare claims data, focusing on patient transactions, insurance payments, and copayments. It provides insights into insurance expenditure, common procedures, and patient cost distribution.
-  </p>
-  <p><strong>Technologies Used:</strong> Python (pandas), PostgreSQL/SQL, Power BI, Tableau, Jupyter Notebook</p>
-  <p>
-    <a href="https://app.powerbi.com/groups/me/reports/38fba93d-033f-4104-8462-ce53b65879e4/7bb60ac88421c932315e?experience=power-bi" target="_blank" rel="noopener noreferrer">View Power BI Dashboard</a>
-  </p>
-</div>
+      <div class="project">
+        <h3>🏥 Healthcare Claims Analysis (Power BI)</h3>
+        <p>
+          This project examines healthcare claims data, focusing on patient transactions, insurance payments, and copayments. It provides insights into insurance expenditure, common procedures, and patient cost distribution.
+        </p>
+        <p><strong>Technologies Used:</strong> Python (pandas), PostgreSQL/SQL, Power BI, Tableau, Jupyter Notebook</p>
+        <p><a href="https://app.powerbi.com/groups/me/reports/38fba93d-033f-4104-8462-ce53b65879e4/7bb60ac88421c932315e?experience=power-bi" target="_blank">View Power BI Dashboard</a></p>
+      </div>
+    </section>
 
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python (Pandas, Matplotlib, Seaborn)</li>
+        <li>SQL, PostgreSQL</li>
+        <li>Power BI, Excel, Tableau</li>
+        <li>Data Cleaning, EDA, Dashboarding, Machine Learning</li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>Contact</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/nthabiseng-mathabatha-434319237/" target="_blank">LinkedIn</a> |
+        <a href="mailto:agnesnthabisengm@gmail.com">Email</a> |
+        <a href="https://github.com/agnesnthabi" target="_blank">GitHub</a>
+      </p>
+    </section>
+  </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Python (Pandas, Matplotlib, Seaborn)</li>
-    <li>SQL, Power BI, Excel</li>
-    <li>Data Cleaning, EDA, Visualization</li>
-  </ul>
-
-  <h2>Contact</h2>
-  <p>
-    <a href="https://www.linkedin.com/in/nthabiseng-mathabatha-434319237/">LinkedIn</a> |
-    <a href="mailto:agnesnthabisengm@gmail.com">Email</a> |
-    <a href="https://github.com/agnesnthabi">GitHub</a>
-  </p>
+  <footer>
+    &copy; 2025 Nthabiseng Mathabatha. All rights reserved.
+  </footer>
 </body>
 </html>
