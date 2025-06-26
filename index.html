@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nthabiseng Mathabatha - Data Portfolio</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -12,6 +16,29 @@
       color: #f1f5f9;
       line-height: 1.6;
       overflow-x: hidden;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
     }
 
     header {
@@ -72,6 +99,12 @@
       transform: translateY(0);
     }
 
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(56, 189, 248, 0.3);
+      transition: all 0.3s ease-in-out;
+    }
+
     .project h3 {
       margin-top: 0;
       color: #93c5fd;
@@ -98,7 +131,27 @@
       color: #94a3b8;
     }
 
+    .resume-button {
+      display: inline-block;
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #0ea5e9;
+    }
+
     @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
       header h1 {
         font-size: 1.5rem;
       }
@@ -107,44 +160,30 @@
         padding: 1rem;
       }
     }
-    .project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(56, 189, 248, 0.3);
-  transition: all 0.3s ease-in-out;
-}
-
-.resume-button {
-  display: inline-block;
-  background-color: #38bdf8;
-  color: #0f172a;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-  background-color: #0ea5e9;
-}
-
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header>
     <h1>Nthabiseng Mathabatha</h1>
     <p>Data Analyst | Aspiring Data Scientist</p>
   </header>
 
   <div class="container">
-    <section class="reveal">
+    <section class="reveal" id="about">
       <h2>About Me</h2>
       <p>
         I’m currently completing a 12-month Data Science Learnership — 6 months of learning and 6 months of workplace experience under the Finance team of an insurance company.
       </p>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="projects">
       <h2>Projects</h2>
 
       <div class="project reveal">
@@ -157,28 +196,27 @@
       <div class="project reveal">
         <h3>🚗 Claim Vision</h3>
         <p>
-          ClaimVision is a data-driven solution designed to help AutoInland, a West African auto insurance provider, predict which customers are likely to submit a vehicle insurance claim within the next three months. This predictive model enables improved financial planning, resource allocation, and proactive customer service.
+          ClaimVision is a data-driven solution designed to help AutoInland, a West African auto insurance provider, predict which customers are likely to submit a vehicle insurance claim within the next three months.
         </p>
         <p>
-          The project involved collecting and preprocessing historical policy and claim data, feature engineering, and evaluating classification algorithms including Logistic Regression, Random Forest, and Gradient Boosting. The final model was chosen based on performance, explainability, and deployment readiness.
+          It involved preprocessing historical policy and claim data, feature engineering, and model evaluation using Logistic Regression, Random Forest, and Gradient Boosting.
         </p>
-        <p><strong>Evaluation Metric:</strong> F1 Score to balance precision and recall.</p>
-        <p><strong>Technologies Used:</strong> Python, Jupyter Notebooks, Streamlit, Power BI</p>
-        <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Joblib, Altair, Base64</p>
+        <p><strong>Evaluation Metric:</strong> F1 Score</p>
+        <p><strong>Technologies:</strong> Python, Jupyter, Streamlit, Power BI</p>
         <p><a href="https://github.com/The-DigitalAcademy/claim_vision" target="_blank">View GitHub Repository</a></p>
       </div>
 
       <div class="project reveal">
         <h3>🏥 Healthcare Claims Analysis (Power BI)</h3>
         <p>
-          This project examines healthcare claims data, focusing on patient transactions, insurance payments, and copayments. It provides insights into insurance expenditure, common procedures, and patient cost distribution.
+          This project examines healthcare claims data, focusing on transactions, insurance payments, and copayments. It delivers insights on expenditure, procedures, and patient cost distribution.
         </p>
-        <p><strong>Technologies Used:</strong> Python (pandas), PostgreSQL/SQL, Power BI, Tableau, Jupyter Notebook</p>
+        <p><strong>Technologies:</strong> Python, SQL, Power BI, Tableau</p>
         <p><a href="https://app.powerbi.com/groups/me/reports/38fba93d-033f-4104-8462-ce53b65879e4/7bb60ac88421c932315e?experience=power-bi" target="_blank">View Power BI Dashboard</a></p>
       </div>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="skills">
       <h2>Skills</h2>
       <ul>
         <li>Python (Pandas, Matplotlib, Seaborn)</li>
@@ -188,7 +226,7 @@
       </ul>
     </section>
 
-    <section class="reveal">
+    <section class="reveal" id="contact">
       <h2>Contact</h2>
       <p>
         <a href="https://www.linkedin.com/in/nthabiseng-mathabatha-434319237/" target="_blank">LinkedIn</a> |
